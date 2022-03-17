@@ -1,0 +1,529 @@
+/*vh --en relación von la vista de la pantalla*/
+/*% -- depende del padre, es una unidad relativa a la medida del padre(tamaño) la nav en la clase*/
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-size: 2rem;
+
+}
+
+html {	
+		font-size: 62.5%;
+}
+
+header{
+	/*height: 10vh;*/
+	height: auto;
+	background-color: black ;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+
+
+	/*width: 100vw;*/
+	
+
+}
+ 
+ /* inicia botonera*/ 
+.botonera {
+		background-color: white;
+		/*position*/
+		position: sticky;
+		top: 0;
+		/*padding*/
+		padding: 10px 30px;
+		/****display flex****/
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		/*flex-direction: column; poner cuando voy a celu*/
+		align-items: center;
+		background: rgb(15,65,12);
+		background: radial-gradient(circle, rgba(15,65,12,1) 0%, rgba(113,189,65,1) 100%);
+	}
+
+	.botonera img{
+		width: 50px;
+		/*margin-bottom: 20px; poner cuando voy a celu*/
+	}
+
+	.botonera ol{
+		/****display flex****/
+		display: flex;
+	}
+
+	.botonera ol li{
+		list-style: none;
+		margin-right: 20px;
+	}
+
+		.botonera ol li a{
+			font-size: 2rem;
+			text-decoration: none;
+		}
+
+		/*hover*/
+		.botonera ol li a:hover{
+			color: black;
+			font-weight: 600;
+		}
+/* Fin botonera*/ 
+
+
+.encabezado__img--fluid{
+	/*size*/
+	width: 100%;
+}
+
+.pie__titulo--md{
+	font-size: 2rem;
+}
+
+.pie__icon--sm{
+	/*size*/
+	width: 60px;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+.novedades__titulo--xxl{
+		font-size: 5rem;
+	}
+
+.video_nosotros {
+				padding-top: 8px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin: 10px auto;
+				box-sizing: border-box;
+}
+
+.Centrar {
+			/*border: solid slategrey 10px;*/
+			padding: 5px;
+			display: inline-block;
+			position: relative;
+			margin-left: 25%;
+	}	
+
+ header .logo{
+ 		height: 80%;
+ 		width:20% ;
+		background-color: white ;
+
+ }
+
+
+header .nav-container{
+	height: 80%;
+	width: 50%;
+	background-color: white ;
+	/*display: inline-block;
+	text-decoration: none;*/
+	
+}
+
+main{
+	height: auto;
+	/*background-color: burlywood;*/
+}
+
+footer{
+height: 90vh;
+
+/*background-color: black;*/
+}
+
+Main Section div img {
+		height: 300px;
+		
+	}
+
+
+.gridFooter {height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows: 1fr ;
+		grid-template-areas: "foot1 foot2"  ;
+		/*background: rgb(15,65,12);
+		background: radial-gradient(circle, rgba(15,65,12,1) 0%, rgba(113,189,65,1) 100%);*/
+		/*background-color: darkseagreen;*/
+	}
+
+.foot-1{
+	grid-area: foot1;
+	/*background-color: coral;*/
+}
+
+.foot-2{
+	grid-area: foot2;
+	/*background: rgb(15,65,12);
+	background: radial-gradient(circle, rgba(15,65,12,1) 0%, rgba(113,189,65,1) 100%);*/
+}
+
+.gridHome {
+		height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1 fr;
+		grid-template-areas: "area1 area1 area1"
+							  "area2 area3 area3"
+							  "area4 area4 area5"
+							  "area12 area12 area12"
+							  "area6 area7 area8"
+							  "area9 area10 area11";
+							  
+		/*background-color: cornflowerblue;*/
+	}
+
+.gridProd {
+		height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1 fr;
+		grid-template-areas: "area1 area1 area1"
+							  "area2 area2 area3"
+							  "area4 area5 area5"
+							  ;
+							  
+		/*background-color: cornflowerblue;*/
+	}
+
+.gridUbicacion {
+		/*height: 30%;*/
+		height: auto;
+		width: auto;
+		display: grid;
+		justify-content: center;
+		text-align: center;
+		font-size: 3rem;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: "area1 area2 area3 area4"
+							  "area5 area6 area7 area8"
+							  "area9 area10 area11 area12"
+							  "area13 area14 area15 area16"
+							  "area17 area18 area19 area20";
+							  
+		/*background-color: cornflowerblue;*/
+	}
+
+.gridNosotros {
+		height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr ;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "area1"
+							  "area2"
+							  			 ;
+							  
+		/*background-color: cornflowerblue;*/
+	}
+
+.gridEventos {
+height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1 fr;
+		grid-template-areas: "area1 area1 area1"
+							  "area2 area3 area4"
+							  "area5 area6 area7"
+							  ;
+							  
+		/*background-color: cornflowerblue;*/
+	}
+
+
+.area-1{
+	grid-area: area1;
+	/*background-color: coral;*/
+}
+
+.area-2{
+	grid-area: area2;
+	/*background-color: white;*/
+	
+}
+
+.area-3{
+	grid-area: area3;
+	/*background-color: darkkhaki;*/
+	
+}
+
+.area-4{
+	grid-area: area4;
+	/*background-color: green;*/
+
+}
+
+.area-5{
+	grid-area: area5;
+	/*background-color: orange;*/
+}
+
+.area-6{
+	grid-area: area6;
+	/*background-color: darkred;*/
+}
+
+/*	.area-5{display: none;}
+	.area-6{display: none;}
+	.area-7{display: none;}
+	.area-8{display: none;}
+	.area-9{display: none;}
+*/
+	
+.area-7{
+	grid-area: area7;
+	/*background-color: violet;*/
+}
+
+.area-8{
+	grid-area: area8;
+	/*background-color: lightcyan ;*/
+}
+
+.area-9{
+	grid-area: area9;
+	/*background-color: lightseagreen;*/
+}
+
+.area-10{
+	grid-area: area10;
+	/*background-color: darkgrey;*/
+}
+
+.area-11{
+	grid-area: area11;
+	/*background-color: darkorchid;*/
+}
+
+.area-12{
+	grid-area: area12;
+	/*background-color: darkolivegreen;*/
+}
+
+.area-13{
+	grid-area: area13;
+	/*background-color: lightslategrey;*/
+}
+.area-14{
+	grid-area: area14;
+	/*background-color: lightblue;*/
+}
+.area-15{
+	grid-area: area15;
+	/*background-color: limegreen;*/
+}
+.area-16{
+	grid-area: area16;
+	/*background-color: lightslategrey;*/
+}
+.area-17{
+	grid-area: area17;
+	/*background-color: lightcoral;*/
+}
+.area-18{
+	grid-area: area18;
+	/*background-color: darkorange;*/
+}
+
+.area-19{
+	grid-area: area19;
+	/*background-color: darkgray;*/
+}
+.area-20{
+	grid-area: area20;
+	/*background-color: darkorchid;*/
+}
+
+
+.transform:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+.scale:hover{
+	transform: scale(1.8);
+	cursor: pointer;
+	transition: transform 3s;
+}
+
+
+@media screen and (max-width:700px	){
+	header{
+		height: 20vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		/*background-color: green ;*/
+	}
+	header .logo{
+	height: 40%;
+	width: 14%;
+	background-color: white;
+	}
+
+	header .nav-container{
+	height: 40%;
+	width: 100%;
+	background-color: white;
+	}
+
+	.botonera {
+		background-color: white;
+		/*position*/
+		position: sticky;
+		top: 0;
+		/*padding*/
+		padding: 10px 30px;
+		/****display flex****/
+		display: flex;
+		flex-direction: column; 
+		align-items: center;
+	}
+
+	.botonera img{
+		width: 50px;
+		margin-bottom: 20px; 
+	}
+
+	/*.publicacion {
+		height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "img1 img2 img3"
+							  "img4 img5 img6"
+							  "img7 img8 img9";
+		background-color: cornflowerblue;
+	}*/
+
+	.gridHome {
+		height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows: auto;
+		grid-template-areas: "area1  area1"
+		 					  "area3 area3"
+		 					  "area2 area2"
+							  "area4 area4"
+							  "area5 area5"
+							  "area12 area12"
+							  "area6 area7"
+							  "area8 area9"
+							  "area10 area11";
+							  
+		/*background-color: cornflowerblue;*/
+	}
+	
+	.gridProd {
+		height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows: auto;
+		grid-template-areas: "area1  area1"
+		 					  "area3 area3"
+		 					  "area2 area2"
+							  "area4 area4"
+							  "area5 area5"
+							  ;
+							  
+		/*background-color: cornflowerblue;*/
+	}
+
+
+	.gridUbicacion {
+		height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr ;
+		grid-template-rows: repeat(4, 1fr); 
+		grid-template-areas: "area4"
+							 "area1" 
+							 "area2" 
+							 "area3"
+							 "area8"
+							  "area5" 
+							  "area6"
+							  "area7" 
+							  "area12"
+							  "area9" 
+							  "area10" 
+							  "area11" 
+							  "area16"
+							  "area13" 
+							  "area14" 
+							  "area15" 
+							  "area20"
+							  "area17" 
+							  "area18"
+							   "area19" ;
+							  
+		/*background-color: cornflowerblue;*/
+	}
+
+	.gridEventos {
+		height: 100%;
+		width: auto;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+
+		grid-template-columns: 1fr ;
+		grid-template-rows: auto;
+		grid-template-areas: "area1" 
+							  "area2" 
+							  "area3" 
+							  "area4"
+							  "area5" 
+							  "area6" 
+							  "area7"
+							  ;
+							  
+		/*background-color: cornflowerblue;*/
+	}
+
+	.gridFooter {height: 30%;
+		width: auto;
+		display: grid;
+		grid-template-columns: 1fr  ;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "foot1"
+							"foot2"  ;
+							  
+		/*background-color: darkseagreen;*/
+	}
+
+	/*.area-1{display: none;}
+	.area-2{display: none;}
+	.area-3{display: none;}
+	.area-4{display: none;}
+	.area-9{display: none;}*/
+
+}
